@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Elevator Program</title>
+<style>
+th,td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   text-align: center;
+}
+th, td {
+    padding: 5px;
+}
+</style>
+<script src="elevator.js">
+</script>
+</head>
+<body>
+
+<h1>Elevator Simulation</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Floor No.</th>
+      <th>Keyboard</th>
+      <th>Button UP</th>
+      <th>Button DOWN</th>
+    </tr>
+  </thead>
+  <tbody id="elevatorTable">
+    <tr class="Floor">
+      <td>2</td>
+      <td onclick="onKeyboard(this)">2</td>
+      <td onclick="onButtonUp(this)">^<a style="display:none;">2</a></td>
+      <td onclick="onButtonDown(this)">v</td>
+    </tr>
+    <tr class="Floor">
+      <td style="background-color:powderblue;">1</td>
+      <td onclick="onKeyboard(this)">1</td>
+      <td onclick="onButtonUp(this)">^</td>
+      <td onclick="onButtonDown(this)">v</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
